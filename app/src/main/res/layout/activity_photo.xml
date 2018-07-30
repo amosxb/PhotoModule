@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <!--录像显示界面-->
+    <RelativeLayout
+        android:id="@+id/rlyt_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <SurfaceView
+            android:id="@+id/cameraView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="120dp" />
+
+        <com.ssdy.education.mobile.utils.CropView
+            android:id="@+id/civ_crop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            app:grid_height="250dp"
+            app:is_line_color="@color/blue_light"
+            app:is_square="false"
+            app:is_square_radius="100dp"
+            app:show_grid="true" />
+    </RelativeLayout>
+
+    <include layout="@layout/photo_controller" />
+
+    <ImageView
+        android:id="@+id/iv_focuse"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/icon_take_ptoto_focus"
+        android:visibility="gone" />
+</RelativeLayout>

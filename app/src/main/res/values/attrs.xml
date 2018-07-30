@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--自定义截图-->
+    <declare-styleable name="CropView">
+        <!--截图框是否显示栅格-->
+        <attr name="show_grid" format="boolean" />
+        <!--栅格颜色-->
+        <attr name="is_line_color" format="color" />
+        <!--栅格默认高度-->
+        <attr name="grid_height" format="dimension" />
+
+        <!--是否显示方的-->
+        <attr name="is_square" format="boolean" />
+        <!--显示为方形的时候半径-->
+        <attr name="is_square_radius" format="dimension" />
+    </declare-styleable>
+</resources>
